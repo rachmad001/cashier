@@ -14,5 +14,6 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(upload.array());
 
 app.use('/office', require('./Controller/OfficeController.js'));
+app.use('/pegawai', require('./Controller/PegawaiController.js'));
 
 app.listen(8000)
